@@ -67,8 +67,9 @@ document.getElementById('guess').addEventListener('click', () => {
    console.log(results.correct_answer)
 
    if (el.value === results.correct_answer){
-    result.innerHTML = 'Buena esa es la correcta'
-   }
+    result.innerHTML = 'Buena esa es la correcta 😎'
+   } else     result.innerHTML = `☠ mala suerte la correcta era ${results.correct_answer}`;
+
   }
  })
 })
