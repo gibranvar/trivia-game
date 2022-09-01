@@ -36,7 +36,7 @@ console.log(results);
 document.getElementById ('question').innerHTML = results.question;
 document.getElementById('category').innerHTML = results.category;
 
-const answers = [...results.incorrect_answers, results.correct_answers];
+const answers = [...results.incorrect_answers, results.correct_answer];
 
 shuffleArray(answers);
 
@@ -53,7 +53,7 @@ document.getElementById('guess').addEventListener('click', () => {
  document.querySelectorAll('input[name="choice"]').forEach((el)=> {
 if(el.checked){
   console.log(el.value  )
-console.log (results.correct_answers)
+console.log (results.correct_answer)
 
   // if (el.value === results.correct_answers)
     }
@@ -63,9 +63,11 @@ document.getElementById('guess').addEventListener('submit', (Event) => {
  document.querySelectorAll('input[name="choice"]').forEach((el) =>{
   if(el.checked)
    console.log(el.value);
-   console.log(results.correct_answers)
+   console.log(results.correct_answer)
 
-
+   if (el.value === results.correct_answer){
+    alert('correct')
+   }
  })
 })
 
