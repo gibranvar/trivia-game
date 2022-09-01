@@ -1,0 +1,1 @@
+trabajando en la base de la trivia html y JS solo funciones y una forma basica
