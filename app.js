@@ -59,15 +59,17 @@ console.log (results.correct_answer)
     }
 let form = document.querySelector('form');
 
-document.getElementById('guess').addEventListener('submit', (Event) => {
+document.getElementById('guess').addEventListener('click', () => {
  document.querySelectorAll('input[name="choice"]').forEach((el) =>{
-  if(el.checked)
+  const result = document.getElementById('result');
+  if(el.checked){
    console.log(el.value);
    console.log(results.correct_answer)
 
    if (el.value === results.correct_answer){
-    alert('correct')
+    result.innerHTML = 'Buena esa es la correcta'
    }
+  }
  })
 })
 
