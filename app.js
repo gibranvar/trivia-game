@@ -30,51 +30,47 @@ function shuffleArray(arr) {
 
 
 getTrivia().then((data) => {
-const results =data.results[0];
-console.log(results);
+  const results = data.results[0];
+  console.log(results);
 
-document.getElementById ('question').innerHTML = results.question;
-document.getElementById('category').innerHTML = results.category;
-
-const answers = [...results.incorrect_answers, results.correct_answer];
-
-shuffleArray(answers);
-
-
-for(let i = 0; i < 4; i++){
-  let index = i + 1; 
- document.getElementById(`choice${index}label`).innerHTML = answers [i];
- document.getElementById(`choice${index}`).value = answers [i];
-}
-let form = document.querySelector('form');
-
-document.getElementById('guess').addEventListener('click', () => {
-
- document.querySelectorAll('input[name="choice"]').forEach((el)=> {
-if(el.checked){
-  console.log(el.value  )
-console.log (results.correct_answer)
-
-  // if (el.value === results.correct_answers)
-    }
-let form = document.querySelector('form');
-
-document.getElementById('guess').addEventListener('click', () => {
- document.querySelectorAll('input[name="choice"]').forEach((el) =>{
-  const result = document.getElementById('result');
-  if(el.checked){
-   console.log(el.value);
-   console.log(results.correct_answer)
-
-   if (el.value === results.correct_answer){
-    result.innerHTML = 'Buena esa es la correcta 😎'
-   } else     result.innerHTML = `☠ mala suerte la correcta era ${results.correct_answer}`;
-
+  document.getElementById("question").innerHTML = results.question;
+  document.getElementById("category").innerHTML = results.category;
+  const answers = [...results.incorrect_answers, results.correct_answer];
+  shuffleArray(answers);
+  for (let i = 0; i < 4; i++) {
+    let index = i + 1;
+    document.getElementById(`choice${index}label`).innerHTML = answers[i];
+    document.getElementById(`choice${index}`).value = answers[i];
   }
- })
-})
+  document.getElementById("guess").addEventListener("click", () => {
+    document.querySelectorAll('input[name="choice"]').forEach((el) => {
+      if (el.checked) {
+        console.log(el.value);
+        console.log(results.correct_answer);
+        // if (el.value === results.correct_answers)
+      }
+      // let form = document.querySelector("form");
+document.getElementById('display').style.display = 'block';
 
+      document.getElementById("guess").addEventListener("click", () => {
+        document.querySelectorAll('input[name="choice"]').forEach((el) => {
+          const result = document.getElementById("result");
+          if (el.checked) {
+            console.log(el.value);
+            console.log(results.correct_answer);
+            if (el.value === results.correct_answer) {
+              result.innerHTML = "Buena esa es la correcta 😎";
+            } else
+              result.innerHTML = `☠ mala suerte la correcta era ${results.correct_answer}`;
+          }
+        });
+      });
     });
   });
+  document.getElementById("new").addEventListener("click", () => {
+    location.reload();
+  });
 });
+
+
 
