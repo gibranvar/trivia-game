@@ -1,6 +1,6 @@
 # TRIVIA-GAME
 
-##Try it yourself!
+## Try it yourself!
 https://app-trivia.netlify.app/
 
 ## About
