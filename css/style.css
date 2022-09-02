@@ -122,24 +122,27 @@ h6 {
       position: absolute;
       width: 100%;
       height: 500vw;
-    
- 
     }
     #app{
-      width:70%;
+      width: 80%;
       height: 100%;
     }
     .container-fluid{
       width: 100%;
+      margin-bottom: -5px;
       
+    }
+    .navbar{
+
+      padding: 0;
     }
     #categories{
      display: none;
      
     }
     .question{
-      font-size: 14px;
-      margin-bottom: 0;
+      font-size: 18px;
+      margin-bottom: 15px;
     }
     .info-question{
       display: flex;
@@ -147,24 +150,26 @@ h6 {
       justify-content: center;
     }
     #category {
-      font-size: 8px;
+      text-align: center;
+      font-size: 10px;
       margin: 5px;
     }
     
     #difficulty {
-      font-size: 8px;
+      text-align: center;
+      font-size: 10px;
       margin: 5px;
     }
     #choices{
-      font-size: 10px;
-      margin: 30px;
+      font-size: 14px;
+      margin: 20px;
       display: flex;
       flex-direction: column;
       margin-left: 50px;
       margin-right: 50px;
     }
     .btns {
-      margin: 15px;
+      margin: 20px;
       display: flex;
       justify-content: center;
     }
@@ -174,12 +179,21 @@ h6 {
       font-size: 10px;
     }
     .gif{
-      width: 50%;
+      width: 60%;
+    }
+    .innergif{
+      margin: 10px;
     }
     #result {
       font-size: 10px;
       justify-content: center;
       text-align: center;
+    }
+    .guess{
+      margin: 5px;
+    }
+    .new {
+      margin: 5px;
     }
     
     
