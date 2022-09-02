@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid green;  */
+   outline: 1px solid green; 
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,6 @@ body {
   background-color: black;
   margin: auto;
   width: 50%;
-  min-width: 500px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.45) 10px 14px 28px,
     rgba(0, 0, 0, 0.4) 10px 10px 40px;
@@ -116,3 +115,73 @@ body {
 h6 {
   text-align: center;
 }
+
+@media (max-width:600px) {
+  
+    #loader{
+      position: absolute;
+      width: 100%;
+      height: 500vw;
+    
+ 
+    }
+    #app{
+      width:70%;
+      height: 100%;
+    }
+    .container-fluid{
+      width: 100%;
+      
+    }
+    #categories{
+     display: none;
+     
+    }
+    .question{
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .info-question{
+      display: flex;
+      margin: 0;
+      justify-content: center;
+    }
+    #category {
+      font-size: 8px;
+      margin: 5px;
+    }
+    
+    #difficulty {
+      font-size: 8px;
+      margin: 5px;
+    }
+    #choices{
+      font-size: 10px;
+      margin: 30px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .btns {
+      margin: 15px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .btn{
+      justify-content: center;
+      font-size: 10px;
+    }
+    .gif{
+      width: 50%;
+    }
+    #result {
+      font-size: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    
+}
+
