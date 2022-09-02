@@ -30,6 +30,9 @@
     <title>Trivia App</title>
   </head>
   <body>
+    <div id="loader">
+      <div id="content"></div>
+    </div>  
     <div id="app">
       <div id="display" style="display: none"></div>
       <nav class="navbar navbar-dark bg-black navbar-expand-lg bg-light">
@@ -55,7 +58,6 @@
                 <span id="category"></span> 
                 <span id="difficulty"></span>
           </div>
-            
         </div>
       <div>
         <div id="choices">
@@ -81,16 +83,13 @@
             <div class="guess">
                 <button class="btn btn-outline-light" id="guess">GUESS!</button>
             </div>
-          
-          <div class="new">
+            <div class="new">
             <button class="btn btn-outline-light" id="new">NEXT QUESTION</button>
-          </div>
-            
-          
+            </div>
         </div>     
       </div>
     </div>
-
+    <script src="/js/loader.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/category.js"></script>
   </body>
