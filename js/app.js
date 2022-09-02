@@ -38,10 +38,10 @@ getTrivia().then((data) => {
     document.querySelectorAll('input[name="choice"]').forEach((el) => {
       
       const wrongAnswer =
-        "<img width='300px' src='https://c.tenor.com/FYS4s3ttBIMAAAAC/gordon-ramsay-hells-kitchen.gif'><p>☠ BAD LUCK, THE CORRECT ANSWER IS</p></img>";
+        "<img class='gif'  width='300px' src='https://c.tenor.com/FYS4s3ttBIMAAAAC/gordon-ramsay-hells-kitchen.gif'><p class='innergif'>☠ BAD LUCK, THE CORRECT ANSWER IS</p></img>";
 
       const correctAnswer =
-        "<img src='https://c.tenor.com/NVlG12ERFzwAAAAM/clapping-leonardo-dicaprio.gif'><p>YOU'RE THE MASTER CHIEF 😎</p></img>";
+        "<img class='gif' src='https://c.tenor.com/NVlG12ERFzwAAAAM/clapping-leonardo-dicaprio.gif'><p class='innergif'>YOU'RE THE MASTER CHIEF 😎</p></img>";
 
       document.getElementById("guess").addEventListener("click", () => {
         document.querySelectorAll('input[name="choice"]').forEach((el) => {
