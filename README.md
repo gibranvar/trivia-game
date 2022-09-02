@@ -1,5 +1,8 @@
 # TRIVIA-GAME
 
+##Try it yourself!
+https://app-trivia.netlify.app/
+
 ## About
 
 This is a team project built for learning purposes.
